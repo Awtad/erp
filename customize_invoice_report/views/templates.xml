@@ -1,0 +1,96 @@
+<odoo>
+    <template id="external_layout_bold_spark" inherit_id="web.external_layout_bold">
+        <xpath expr="//div[1]" position="replace">
+            <div style="text-left !important" t-attf-class="header o_company_#{company.id}_layout" t-att-style="report_header_style">
+                <div class="o_background_header">
+                    <div t-attf-style="#{'float: right' if 'ar' in env.user.lang else 'float: right'}">
+                        <h3 class="mt0 text-right" t-field="company.report_header"/>
+                    </div>
+                    <img t-if="company.logo" t-att-src="image_data_uri(company.logo)"
+                         t-attf-style="#{'float: right' if 'ar' in env.user.lang else 'float: right'}"
+                         alt="Logo"/>
+                    <div class="company_address " name="company_address"
+                         t-attf-style="#{'float: right' if 'ar' in env.user.lang else 'float: right'}">
+                        <div class="company_address " name="company_address"
+                             t-attf-style="#{'float: right' if 'ar' in env.user.lang else 'float: right'}">
+                            <div t-field="company.partner_id"
+                                 t-options='{"widget": "contact", "fields": ["name", "street","phone","email", "vat","website"], "no_marker": True, "phone_icons": True}'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </xpath>
+
+    </template>
+    <template id="external_layout_standard_spark" inherit_id="web.external_layout_standard">
+        <xpath expr="//div[1]" position="replace">
+            <div style="text-left !important" t-attf-class="header o_company_#{company.id}_layout" t-att-style="report_header_style">
+                <div class="o_background_header">
+                    <div t-attf-style="#{'float: right' if 'ar' in env.user.lang else 'float: right'}">
+                        <h3 class="mt0 text-right" t-field="company.report_header"/>
+                    </div>
+                    <img t-if="company.logo" t-att-src="image_data_uri(company.logo)"
+                         t-attf-style="#{'float: right' if 'ar' in env.user.lang else 'float: right'}"
+                         alt="Logo"/>
+                    <div class="company_address " name="company_address"
+                         t-attf-style="#{'float: right' if 'ar' in env.user.lang else 'float: right'}">
+                        <div class="company_address " name="company_address"
+                             t-attf-style="#{'float: right' if 'ar' in env.user.lang else 'float: right'}">
+                            <div t-field="company.partner_id"
+                                 t-options='{"widget": "contact", "fields": ["name", "street","phone","email", "vat","website"], "no_marker": True, "phone_icons": True}'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </xpath>
+
+    </template>
+    <template id="external_layout_boxed_spark" inherit_id="web.external_layout_boxed">
+        <xpath expr="//div[1]" position="replace">
+            <div style="text-left !important" t-attf-class="header o_company_#{company.id}_layout" t-att-style="report_header_style">
+                <div class="o_background_header">
+                    <div t-attf-style="#{'float: right' if 'ar' in env.user.lang else 'float: right'}">
+                        <h3 class="mt0 text-right" t-field="company.report_header"/>
+                    </div>
+                    <img t-if="company.logo" t-att-src="image_data_uri(company.logo)"
+                         t-attf-style="#{'float: right' if 'ar' in env.user.lang else 'float: right'}"
+                         alt="Logo"/>
+                    <div class="company_address " name="company_address"
+                         t-attf-style="#{'float: right' if 'ar' in env.user.lang else 'float: right'}">
+                        <div class="company_address " name="company_address"
+                             t-attf-style="#{'float: right' if 'ar' in env.user.lang else 'float: right'}">
+                            <div t-field="company.partner_id"
+                                 t-options='{"widget": "contact", "fields": ["name", "street","phone","email", "vat","website"], "no_marker": True, "phone_icons": True}'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </xpath>
+
+    </template>
+    <template id="external_layout_striped_spark" inherit_id="web.external_layout_striped">
+        <xpath expr="//div[1]" position="replace">
+            <div style="text-left !important" t-attf-class="header o_company_#{company.id}_layout" t-att-style="report_header_style">
+                <div class="o_background_header">
+                    <div t-attf-style="#{'float: right' if 'ar' in env.user.lang else 'float: right'}">
+                        <h3 class="mt0 text-right" t-field="company.report_header"/>
+                    </div>
+                    <img t-if="company.logo" t-att-src="image_data_uri(company.logo)"
+                         t-attf-style="#{'float: right' if 'ar' in env.user.lang else 'float: right'}"
+                         alt="Logo"/>
+                    <div class="company_address " name="company_address"
+                         t-attf-style="#{'float: right' if 'ar' in env.user.lang else 'float: right'}">
+                        <div t-field="company.partner_id"
+                                 t-options='{"widget": "contact", "fields": ["name", "street","phone","email", "vat","website"], "no_marker": True, "phone_icons": True}'/>
+                    </div>
+                </div>
+            </div>
+
+        </xpath>
+
+    </template>
+
+</odoo>
