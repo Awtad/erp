@@ -18,7 +18,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['sale_management','electronic_invoice'],
+    'depends': ['electronic_invoice'],
 
     # always loaded
     'data': [
@@ -26,6 +26,6 @@
         'security/security.xml',
         'views/templates.xml',
         'report/report_invoice.xml',
-        'report/report_sale.xml',
+       
     ]
 }
