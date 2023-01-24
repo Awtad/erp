@@ -42,6 +42,8 @@ class Accountmove(models.Model):
         return number + length_encoding + value
 
     def qrcode_info(self, vendor):
+        if not vendor.vat:
+            vendor.vat = 000000000000000
         vendor_name = self.qr_encoding_value(1, vendor.display_name)
         vendor_vat = self.qr_encoding_value(2, vendor.vat)
         time_sa = fields.Datetime.context_timestamp(self.with_context(tz='Asia/Riyadh'),
