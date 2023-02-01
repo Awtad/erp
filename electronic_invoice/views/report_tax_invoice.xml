@@ -106,7 +106,7 @@
                     </center>
                     <div class="row my-1 medium-font" style="margin-left: -16px">
                         <div class="col-3">
-                            <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s'%('QR',o.qrcode_info(vendor), 150, 150)"/>
+                            <img t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s'%('QR',o.qrcode_info(vendor), 150, 150)"/>
                         </div>
 
                         <div class="col-7" style="margin-left: 144px">
@@ -864,7 +864,7 @@
                         <table>
                             <tr>
                                 <td>
-                                    <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s'%('QR',o.qrcode_info(vendor), 200, 200)"/>
+                                    <img t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s'%('QR',o.qrcode_info(vendor), 200, 200)"/>
                                 </td>
                             </tr>
                         </table>
